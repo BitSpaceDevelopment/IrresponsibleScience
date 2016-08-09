@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Irresponsible Science</title>
+
+	<script type="text/javascript" src="js/konami.js"></script>
+	<script type="text/javascript" src="js/mobiledetection.js"></script>
+
+	<script type="text/javascript">
+		var easter_egg = new Konami(function() { 
+			document.getElementById("guy").style.display = "block";
+		});
+
+		if( isMobile.any() ) { 
+			document.write('<link rel="stylesheet" type="text/css" href="css/mobile.css">');
+		} else {
+			document.write('<link rel="stylesheet" type="text/css" href="css/style.css">');
+		}
+	</script>
+</head>
+<body>
+	<section>
+		<h1>
+			<img src="images/Irresponsible-Science.png" alt="Irresponsible Science Logo">
+		</h1>
+
+		<form>
+			<img src="images/GUY1.png" id="guyonform">
+			<input type="email" name="newsletter" placeholder="SUBSCRIBE TO OUR NEWSLETTER">
+			<input type="submit" name="signup" value="SIGN UP">
+		</form>
+
+		<aside>
+			<ul>
+				<li><a href="#" class="facebook"></a></li>
+				<li><a href="#" class="youtube"></a></li>
+				<li><a href="#" class="twitter"></a></li>
+			</ul>
+		</aside>
+
+		<footer>
+			<p>Copyright 2016 © Bit Space Development Ltd.</p>
+		</footer>
+
+		<img src="images/GUY1.png" id="guy">
+	</section>
+</body>
+</html>

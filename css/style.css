@@ -1,0 +1,260 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+* { box-sizing: border-box; }
+
+body {
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: #FEDD32 url(../images/Giant-Monster.png);
+	background-position: 95% bottom;
+    background-repeat: no-repeat;
+    background-size: 38%;
+    
+	font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+section {
+	width: 100%;
+	padding: 2%;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+h1 img {
+	width: 25%;
+}
+
+form {
+	margin-top: 10%;
+}
+
+form img#guyonform {
+	display: none;
+}
+
+form input[type="email"] {
+	width: 350px;
+	height: 50px;
+	border: none;
+	padding: 0 40px;
+
+	background: #FFFFFF url(../images/science-icon.png) no-repeat;
+	background-size: 20px;
+	background-position: 10px center;
+	outline: none;
+
+	-webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: .9rem;
+	font-weight: 100;
+	color: #818181;
+}
+
+form input[type="submit"] {
+	width: 100px;
+	height: 50px;
+	padding: 0;
+	margin-left: 5px;
+
+	background-color: #FF6EB0;
+	border: none;
+	outline: none;
+
+	-webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: .9rem;
+	font-weight: 500;
+	color: #FFFFFF;
+}
+
+aside ul {
+	list-style: none;
+	margin: 10px 0;
+    padding: 0;
+}
+
+aside ul li {
+	display: inline-block;
+}
+
+aside ul li a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin-right: 5px;
+
+	
+}
+
+.facebook {
+	background-image: url(../images/facebook.png);
+}
+
+.twitter {
+	background-image: url(../images/twitter.png);
+}
+
+.youtube {
+	background-image: url(../images/youtube.png);
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 2%;
+}
+
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: .8rem;
+	font-weight: 500;
+	color: #696969;
+}
+
+img#guy {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+
+@media screen and (max-width: 1400px) {
+
+	body {
+		background-size: 42%;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+
+	body {
+		background-size: 47%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+
+	body {
+		background-size: 50%;
+	}
+}
+
+@media screen and (max-width: 950px) {
+
+	body {
+		background-size: 55%;
+	}
+
+	form {
+		margin-top: 20%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+
+	body {
+		background-size: 65%;
+	}
+
+	h1 img {
+		width: 35%;
+	}
+
+	form {
+		margin-top: 30%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	body {
+		background-size: 75%;
+	}
+
+	h1 img {
+		width: 40%;
+	}
+
+	form {
+		margin-top: 40%;
+	}
+}
+
+@media screen and (max-width: 620px) {
+
+	body {
+		background-size: 85%;
+	}
+
+	h1 img {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+
+	body {
+		background-size: 90%;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	h1 img {
+		width: 60%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	form input[type="email"] {
+		width: 80%;
+		font-size: .7rem;
+	}
+
+	form input[type="submit"] {
+		width: 18%;
+		font-size: .7rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	body {
+		background-size: 100%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+	body {
+		background-size: 110%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
