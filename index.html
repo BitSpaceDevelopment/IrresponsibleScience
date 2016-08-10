@@ -19,11 +19,14 @@
 		}
 
 		// Returns a random number between min (inclusive) and max (exclusive)
-		function getGuyNumber(min, max) {
+		function getGuyImageUrl(min, max) {
 		  	min = Math.ceil(min);
 			max = Math.floor(max);
 			return "images/GUY" + (Math.floor(Math.random() * (max - min + 1)) + min) + ".png";
 		}
+
+  		document.getElementById("guyonform").src = getGuyImageUrl(1,4);
+
 	</script>
 </head>
 <body>
@@ -33,7 +36,7 @@
 		</h1>
 
 		<form>
-			<img onload="this.setAttribute('src', getGuyNumber(1,4))" id="guyonform">
+			<img id="guyonform" src="">
 			<input type="email" name="newsletter" placeholder="SUBSCRIBE TO OUR NEWSLETTER">
 			<input type="submit" name="signup" value="SIGN UP">
 		</form>
