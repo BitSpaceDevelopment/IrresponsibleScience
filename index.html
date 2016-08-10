@@ -17,6 +17,13 @@
 		} else {
 			document.write('<link rel="stylesheet" type="text/css" href="css/style.css">');
 		}
+
+		// Returns a random number between min (inclusive) and max (exclusive)
+		function getGuyNumber(min, max) {
+		  	min = Math.ceil(min);
+			max = Math.floor(max);
+			return "images/GUY" + (Math.floor(Math.random() * (max - min + 1)) + min) + ".png";
+		}
 	</script>
 </head>
 <body>
@@ -26,7 +33,7 @@
 		</h1>
 
 		<form>
-			<img src="images/GUY1.png" id="guyonform">
+			<img onload="this.setAttribute('src', getGuyNumber(1,4))" id="guyonform">
 			<input type="email" name="newsletter" placeholder="SUBSCRIBE TO OUR NEWSLETTER">
 			<input type="submit" name="signup" value="SIGN UP">
 		</form>
