@@ -128,6 +128,25 @@ img#guy {
 	right: 0;
 	bottom: 0;
 	display: none;
+
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-fill-mode: forwards;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {right: 0;}
+    to {right: 100%;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {right: 0;}
+    to {right: 100%;}
 }
 
 @media screen and (max-width: 1400px) {
